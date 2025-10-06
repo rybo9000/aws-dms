@@ -1,0 +1,26 @@
+{
+    "rules": [
+        {
+            "rule-type": "selection",
+            "rule-id": "015552122",
+            "rule-name": "962748620",
+            "object-locator": {
+                "schema-name": "dbo",
+                "table-name": "tbldev"
+            },
+            "rule-action": "include",
+            "filters": []
+        },
+        {
+            "rule-type": "selection",
+            "rule-id": "962897620",
+            "rule-name": "962849360",
+            "object-locator": {
+                "schema-name": "dbo",
+                "table-name": "tbldev"
+            },
+            "rule-action": "include",
+            "filters": []
+        }
+    ]
+}

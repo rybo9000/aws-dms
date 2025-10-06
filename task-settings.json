@@ -1,0 +1,71 @@
+{
+    "Logging": {
+        "EnableLogging": true,
+        "EnableLogContext": true,
+        "LogComponents": [
+            {
+                "Severity": "LOGGER_SEVERITY_DEFAULT",
+                "Id": "TRANSFORMATION"
+            },
+            {
+                "Severity": "LOGGER_SEVERITY_DEFAULT",
+                "Id": "SOURCE_UNLOAD"
+            },
+            {
+                "Severity": "LOGGER_SEVERITY_DEFAULT",
+                "Id": "IO"
+            },
+            {
+                "Severity": "LOGGER_SEVERITY_DEFAULT",
+                "Id": "TARGET_LOAD"
+            }
+        ]
+    },
+    "StreamBufferSettings": {
+        "StreamBufferCount": 3,
+        "CtrlStreamBufferSizeInMB": 5,
+        "StreamBufferSizeInMB": 8
+    },
+    "ErrorBehavior": {
+        "FailOnNoTablesCaptured": true,
+        "ApplyErrorUpdatePolicy": "LOG_ERROR",
+        "FailOnTransactionConsistencyBreached": false
+    },
+    "TTSettings": {
+        "TTS3Settings": null,
+        "TTRecordSettings": null,
+        "EnableTT": false
+    },
+    "FullLoadSettings": {
+        "CommitRate": 10000,
+        "StopTaskCachedChangesApplied": false,
+        "StopTaskCachedChangesNotApplied": false,
+        "MaxFullLoadSubTasks": 8
+    },
+    "TargetMetadata": {
+        "ParallelApplyBufferSize": 0,
+        "ParallelApplyQueuesPerThread": 0,
+        "ParallelApplyThreads": 0,
+        "TargetSchema": ""
+    },
+    "BeforeImageSettings": null,
+    "ControlTablesSettings": {
+        "historyTimeslotInMinutes": 5,
+        "CommitPositionTableEnabled": false,
+        "HistoryTimeslotInMinutes": 5,
+        "StatusTableEnabled": false
+    },
+    "LoopbackPreventionSettings": null,
+    "CharacterSetSettings": null,
+    "FailTaskWhenCleanTaskResourceFailed": false,
+    "ChangeProcessingTuning": {
+        "StatementCacheSize": 50,
+        "CommitTimeout": 1
+    },
+    "ChangeProcessingDdlHandlingPolicy": {
+        "HandleSourceTableDropped": true,
+        "HandleSourceTableTruncated": true,
+        "HandleSourceTableAltered": true
+    },
+    "PostProcessingRules": null
+}
